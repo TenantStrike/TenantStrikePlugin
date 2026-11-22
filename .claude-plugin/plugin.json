@@ -1,0 +1,14 @@
+{
+  "name": "tenant-strike",
+  "displayName": "Tenant Strike",
+  "version": "0.2.0",
+  "description": "Talk to your Microsoft 365 and Azure tenant. Ask what Tenant Strike's read-only security scan found, how to fix it, how the weaknesses chain into attack paths, what changed, and what a setting is right now.",
+  "author": { "name": "Tenant Strike", "email": "hello@tenantstrike.com", "url": "https://tenantstrike.com" },
+  "homepage": "https://tenantstrike.com/connector/",
+  "license": "MIT",
+  "keywords": ["microsoft-365", "azure", "entra-id", "security", "security-assessment", "attack-paths"],
+  "icon": "./icon.png",
+  "documentationUrl": "https://tenantstrike.com/connector/",
+  "privacyPolicyUrl": "https://tenantstrike.com/privacy/",
+  "termsOfServiceUrl": "https://tenantstrike.com/terms/"
+}

@@ -1,0 +1,8 @@
+{
+  "mcpServers": {
+    "tenant-strike": {
+      "type": "http",
+      "url": "https://mcp.tenantstrike.com/mcp"
+    }
+  }
+}
