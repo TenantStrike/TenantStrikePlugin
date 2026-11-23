@@ -19,7 +19,7 @@ Compare the user's latest Tenant Strike scan with the one before it, read throug
    - `unassessed`: failing before, and the new scan could not measure it. This is not a fix.
    - `changed`: still failing, with different evidence or a different severity.
    - `check_revised` or `check_added`: Tenant Strike corrected or added the check between the two scans. The difference may come from the check and not from the tenant.
-4. For the title, what was found and the fix, call `get_finding`. Use `data.to.scanRef` for `new`, `changed`, `check_revised` and `check_added` rows, and `data.from.scanRef` for `resolved` and `unassessed` rows, because each row's `findingRefs` point into the scan the finding was read from. The fix is in `fix.summary`, with who does it in `fix.who`.
+4. For the title, what was found and the fix, call `get_finding`. Use `data.to.scanRef` for `new`, `changed` and `check_added` rows, and `data.from.scanRef` for `resolved` and `unassessed` rows, because each row's `findingRefs` point into the scan the finding was read from. A `check_revised` row can point into either scan: try `data.to.scanRef`, and if the result says no finding matches, use `data.from.scanRef`. The fix is in `fix.summary`, with who does it in `fix.who`.
 5. Call `get_posture_trend` with no arguments for the grade and score of each recent scan. If a row's `comparableWithPrevious` is false, the two scans did not measure the same things.
 
 ## What to write
